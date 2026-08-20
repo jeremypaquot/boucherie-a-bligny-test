@@ -25,3 +25,7 @@
 @media(max-width:800px){.google-reviews{padding:4.5rem 6vw}.google-reviews-inner{grid-template-columns:1fr;gap:2rem}.google-rating{width:100%;min-width:0}}
 @media(max-width:800px){.menu-page main{padding:4rem 5vw}.menu-sections{grid-template-columns:1fr}.menu-card{padding:1.6rem}.menu-items li{grid-template-columns:1fr}.menu-items strong{margin-top:-.3rem}.menu-page .site-header nav a{color:white}}
 
+/* Presse : source avant la photo sur mobile uniquement */
+.press-mobile-heading{display:none}
+@media(max-width:900px){.press-mobile-heading{display:block;padding:4rem 6vw 1.5rem;background:var(--wine);color:#fff}.press-mobile-heading .eyebrow{margin:0 0 .65rem}.press-mobile-heading .source{display:block;color:#d9b8b6;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase}.press-copy>.eyebrow,.press-copy>.source{display:none}}
+
