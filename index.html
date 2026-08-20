@@ -10,11 +10,12 @@
   <meta property="og:description" content="Boucherie, charcuterie et traiteur au cœur de Montbard.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/devanture.webp">
-  <link rel="icon" href="assets/logo.jpg">
+  <link rel="icon" href="assets/logo-transparent.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="overrides.css">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"ButcherShop","name":"Boucherie Arnaud Bligny","description":"Boucherie, charcuterie et traiteur à Montbard.","telephone":"+33380920204","image":"assets/devanture.webp","address":{"@type":"PostalAddress","streetAddress":"31 Rue Edmé Piot","postalCode":"21500","addressLocality":"Montbard","addressCountry":"FR"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":"Monday","opens":"07:00","closes":"12:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Thursday"],"opens":"07:00","closes":"12:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Thursday"],"opens":"14:00","closes":"18:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Wednesday","opens":"07:00","closes":"12:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Friday","opens":"07:00","closes":"12:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Friday","opens":"14:00","closes":"19:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"07:00","closes":"12:30"}]}
   </script>
@@ -22,14 +23,14 @@
 <body>
   <a class="skip-link" href="#contenu">Aller au contenu</a>
   <header class="site-header">
-    <a class="brand" href="#accueil" aria-label="Retour à l'accueil"><img src="assets/logo.jpg" alt="Logo de la Boucherie Charcuterie Traiteur Arnaud Bligny"><span>Arnaud Bligny<small>Boucherie · Charcuterie · Traiteur</small></span></a>
+    <a class="brand" href="#accueil" aria-label="Retour à l'accueil"><img src="assets/logo-transparent.png" alt="Logo de la Boucherie Charcuterie Traiteur Arnaud Bligny"><span><b>Arnaud Bligny</b><small>Boucherie · Charcuterie · Traiteur</small></span></a>
     <button class="menu-toggle" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span><span class="sr-only">Ouvrir le menu</span></button>
-    <nav id="menu" aria-label="Navigation principale"><a href="#maison">La maison</a><a href="#produits">Nos produits</a><a href="#horaires">Horaires</a><a href="#presse">Dans la presse</a><a class="nav-cta" href="#contact">Nous trouver</a></nav>
+    <nav id="menu" aria-label="Navigation principale"><a href="#boucherie">La boucherie</a><a href="#produits">Nos produits</a><a href="carte-traiteur.html">Carte traiteur</a><a href="#horaires">Horaires</a><a href="#presse">Presse</a><a class="nav-cta" href="#contact">Nous trouver</a></nav>
   </header>
 
   <main id="contenu">
     <section class="hero" id="accueil">
-      <img class="hero-image" src="assets/devanture.webp" alt="Devanture de la Boucherie Arnaud Bligny à Montbard">
+      <img class="hero-image" src="assets/hero-boutique.jpg" alt="Entrée et enseigne de la Boucherie Arnaud Bligny à Montbard">
       <div class="hero-shade"></div>
       <div class="hero-content reveal">
         <p class="eyebrow">Artisan boucher à Montbard</p>
@@ -37,11 +38,11 @@
         <p class="hero-text">Boucherie, charcuterie et préparations traiteur au cœur de Montbard.</p>
         <div class="actions"><a class="button primary" href="tel:+33380920204">Appeler la boutique</a><a class="button ghost" href="https://www.google.com/maps/dir/?api=1&destination=31+Rue+Edme+Piot+21500+Montbard" target="_blank" rel="noopener noreferrer">Itinéraire</a></div>
       </div>
-      <a class="scroll" href="#maison" aria-label="Découvrir la boutique">Découvrir <span>↓</span></a>
+      <a class="scroll" href="#boucherie" aria-label="Découvrir la boucherie">Découvrir <span>↓</span></a>
     </section>
 
-    <section class="intro section" id="maison">
-      <div class="section-copy reveal"><p class="eyebrow dark">La maison</p><h2>Un savoir-faire artisanal,<br>une adresse de proximité</h2><p>À deux pas du centre de Montbard, Arnaud Bligny vous accueille dans sa boucherie-charcuterie-traiteur. Une boutique de quartier où le métier, la préparation et le conseil sont au centre de chaque visite.</p><a class="text-link" href="#produits">Découvrir nos produits <span>→</span></a></div>
+    <section class="intro section" id="boucherie">
+      <div class="section-copy reveal"><p class="eyebrow dark">La boucherie</p><h2>Un savoir-faire artisanal,<br>une adresse de proximité</h2><p>À deux pas du centre de Montbard, Arnaud Bligny vous accueille dans sa boucherie-charcuterie-traiteur. Une boutique de quartier où le métier, la préparation et le conseil sont au centre de chaque visite.</p><a class="text-link" href="#produits">Découvrir nos produits <span>→</span></a></div>
       <figure class="shop-frame reveal"><img src="assets/boutique.webp" alt="Façade de la Boucherie Arnaud Bligny" loading="lazy"><figcaption>31 rue Edmé Piot · Montbard</figcaption></figure>
     </section>
 
@@ -53,10 +54,11 @@
         <article><span>03</span><h3>Traiteur</h3><p>Des préparations généreuses pour accompagner vos repas et vos envies.</p></article>
       </div>
       <figure class="wide-photo reveal"><img src="assets/produits.jpg" alt="Assortiment de charcuteries et de préparations dans la vitrine" loading="lazy"></figure>
+      <div class="menu-invite reveal"><p><span>Pour vos repas et vos réceptions</span>Découvrez l’ensemble de nos préparations et de nos tarifs.</p><a class="button light" href="carte-traiteur.html">Voir la carte traiteur →</a></div>
     </section>
 
     <section class="hours section" id="horaires">
-      <div class="hours-title reveal"><p class="eyebrow dark">Préparez votre visite</p><h2>Horaires<br>d’ouverture</h2><div class="status" id="open-status" aria-live="polite"><i></i><span>Horaires de la semaine</span></div></div>
+      <div class="hours-title reveal"><p class="eyebrow dark">Préparez votre visite</p><h2>Horaires<br>d’ouverture</h2><div class="status" id="open-status" aria-live="polite"><i></i><span>Horaires de la semaine</span></div><aside class="holiday"><strong>Congés estivaux</strong><span>Fermeture du 8 août à 12h au 31 août inclus.</span></aside></div>
       <div class="hours-list reveal">
         <div data-day="1"><strong>Lundi</strong><span>7h – 12h</span></div>
         <div data-day="2"><strong>Mardi</strong><span>7h – 12h30 <b>·</b> 14h – 18h</span></div>
@@ -74,11 +76,11 @@
     </section>
 
     <section class="contact section" id="contact">
-      <div class="contact-card reveal"><img src="assets/logo.jpg" alt="" aria-hidden="true"><p class="eyebrow dark">Venez nous rencontrer</p><h2>Au cœur de<br>Montbard</h2><address>31 Rue Edmé Piot<br>21500 Montbard</address><a class="phone" href="tel:+33380920204">03 80 92 02 04</a><div class="actions"><a class="button primary" href="https://www.google.com/maps/dir/?api=1&destination=31+Rue+Edme+Piot+21500+Montbard" target="_blank" rel="noopener noreferrer">Obtenir l’itinéraire</a></div></div>
+      <div class="contact-card reveal"><img src="assets/logo-transparent.png" alt="" aria-hidden="true"><p class="eyebrow dark">Venez nous rencontrer</p><h2>Au cœur de<br>Montbard</h2><address>31 Rue Edmé Piot<br>21500 Montbard</address><a class="phone" href="tel:+33380920204">03 80 92 02 04</a><div class="actions"><a class="button primary" href="https://www.google.com/maps/dir/?api=1&destination=31+Rue+Edme+Piot+21500+Montbard" target="_blank" rel="noopener noreferrer">Obtenir l’itinéraire</a></div></div>
       <a class="contact-photo reveal" href="https://www.google.com/maps/dir/?api=1&destination=31+Rue+Edme+Piot+21500+Montbard" target="_blank" rel="noopener noreferrer" aria-label="Ouvrir l’itinéraire vers la boucherie"><img src="assets/enseigne.webp" alt="Entrée de la boucherie avec l’enseigne Bligny" loading="lazy"><span>Nous trouver sur la carte ↗</span></a>
     </section>
   </main>
   <footer><div class="footer-brand">Arnaud Bligny <small>Boucherie · Charcuterie · Traiteur</small></div><p>31 Rue Edmé Piot, 21500 Montbard</p><a href="tel:+33380920204">03 80 92 02 04</a><p class="copyright">Site web créé par @Jérémy Paquot — 2026 — Tous droits réservés</p></footer>
-  <script src="script.js"></script>
+  <script src="script.js?v=2"></script>
 </body>
 </html>
