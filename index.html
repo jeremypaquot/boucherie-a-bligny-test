@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="overrides.css?v=12">
+  <link rel="stylesheet" href="overrides.css?v=13">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"ButcherShop","name":"Boucherie Arnaud Bligny","description":"Boucherie, charcuterie et traiteur à Montbard.","telephone":"+33380920204","image":"assets/devanture.webp","address":{"@type":"PostalAddress","streetAddress":"31 Rue Edmé Piot","postalCode":"21500","addressLocality":"Montbard","addressCountry":"FR"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":"Monday","opens":"07:00","closes":"12:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Thursday"],"opens":"07:00","closes":"12:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Thursday"],"opens":"14:00","closes":"18:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Wednesday","opens":"07:00","closes":"12:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Friday","opens":"07:00","closes":"12:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Friday","opens":"14:00","closes":"19:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"07:00","closes":"12:30"}]}
   </script>
@@ -84,8 +84,62 @@
     </section>
     <section class="google-reviews" aria-labelledby="avis-google-title">
       <div class="google-reviews-inner">
-        <div class="google-reviews-copy"><p class="eyebrow dark">Avis clients</p><h2 id="avis-google-title">Ils nous font confiance</h2><p>Découvrez les avis laissés par nos clients et partagez votre expérience avec la Boucherie Arnaud Bligny.</p></div>
-        <div class="google-rating"><strong>5,0</strong><span class="google-stars" aria-label="5 étoiles sur 5">★★★★★</span><small>3 avis Google</small><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Boucherie+Arnaud+Bligny+31+Rue+Edme+Piot+21500+Montbard" target="_blank" rel="noopener noreferrer">Voir les avis Google ↗</a></div>
+        <div class="reviews-head">
+          <div class="google-reviews-copy">
+            <p class="eyebrow dark">Avis clients</p>
+            <h2 id="avis-google-title">Ils nous font confiance</h2>
+            <p>Trois témoignages laissés par nos clients sur Google.</p>
+          </div>
+          <div class="google-rating google-rating-summary">
+            <strong>5,0</strong>
+            <span class="google-stars" aria-label="5 étoiles sur 5">★★★★★</span>
+            <small>3 avis Google</small>
+          </div>
+        </div>
+
+        <div class="reviews-grid">
+          <article class="review-card">
+            <header class="review-author">
+              <span class="review-avatar avatar-isabelle" aria-hidden="true">MI</span>
+              <span><strong>maletras isabelle</strong><small>Local Guide · 23 avis · 19 photos</small></span>
+            </header>
+            <div class="review-score"><span class="google-stars" aria-label="5 étoiles sur 5">★★★★★</span><span>Il y a un an</span></div>
+            <p class="review-text">Merci Arnaud pour ce déjeuner que vous avez confectionner pour l’anniversaire de ma Maman et mon Mari. Une entrée de poisson à couper le souffle…</p>
+            <p class="review-visit">Visité en mars 2025</p>
+            <small class="review-source">Avis publié sur Google</small>
+          </article>
+
+          <article class="review-card">
+            <header class="review-author">
+              <span class="review-avatar avatar-claire" aria-hidden="true">C</span>
+              <span><strong>claire joannis</strong><small>1 avis</small></span>
+            </header>
+            <div class="review-score"><span class="google-stars" aria-label="5 étoiles sur 5">★★★★★</span><span>Il y a 3 mois</span></div>
+            <p class="review-text">Un jeune courageux et passionné en boucherie, bien secondé en traiteur. Une affaire familiale qui maintient la tradition avec des prix très raisonnables et un bon contact agréable et à l’écoute. N’hésite pas à faire un petit cadeau. Je recommande</p>
+            <p class="review-visit">Visité en mai</p>
+            <aside class="owner-reply">
+              <strong>Boucherie Arnaud Bligny</strong>
+              <small>Réponse du propriétaire · il y a 2 mois</small>
+              <p>Un grand merci pour votre avis et votre confiance</p>
+            </aside>
+            <small class="review-source">Avis publié sur Google</small>
+          </article>
+
+          <article class="review-card">
+            <header class="review-author">
+              <span class="review-avatar avatar-laurence" aria-hidden="true">LT</span>
+              <span><strong>laurence terrillon</strong><small>Local Guide · 40 avis · 39 photos</small></span>
+            </header>
+            <div class="review-score"><span class="google-stars" aria-label="5 étoiles sur 5">★★★★★</span><span>Il y a 8 mois</span></div>
+            <p class="review-text">Deuxième année que la commune fait appel à la boucherie traiteur pour le repas des aînés. Tout le monde est très satisfait, c’est vraiment top en qualité. Un régal chaque année. Merci</p>
+            <p class="review-visit">Visité en décembre 2025</p>
+            <small class="review-source">Avis publié sur Google</small>
+          </article>
+        </div>
+
+        <div class="reviews-action">
+          <a class="button primary" href="https://www.google.com/maps/search/?api=1&amp;query=Boucherie+Arnaud+Bligny+31+Rue+Edme+Piot+21500+Montbard" target="_blank" rel="noopener noreferrer">Voir les avis sur Google ↗</a>
+        </div>
       </div>
     </section>
 
