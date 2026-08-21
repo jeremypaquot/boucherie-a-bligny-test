@@ -33,3 +33,35 @@
 /* Typographie artisanale : titres organiques, informations franches */
 body{font-family:"Barlow",Arial,sans-serif;font-size:1.02rem;letter-spacing:.005em}h1,h2,h3,.phone,.hours-list span,.footer-brand,.menu-items strong,.google-rating strong{font-family:"Fraunces",Georgia,serif;font-variation-settings:"opsz" 72}h1,h2{letter-spacing:-.045em}h1{font-weight:600}h1 em{font-style:italic;font-weight:500}.section-copy h2,.section-heading h2,.hours h2,.press-copy h2,.contact h2,.menu-hero h1,.google-reviews h2{font-weight:600}.product-grid h3,.menu-card h2{font-weight:600;letter-spacing:-.025em}.eyebrow,.button,.site-header nav,.brand small,.shop-frame figcaption,.source,.status,.hours-list strong,.menu-invite p span,.holiday strong,.contact-photo span,.hours-list:before{font-family:"Barlow Condensed",Arial,sans-serif;font-weight:600}.eyebrow{font-size:.76rem;letter-spacing:.2em}.button{font-size:.76rem;letter-spacing:.09em}.site-header nav{font-size:.88rem;letter-spacing:.025em}.brand{font-family:"Fraunces",Georgia,serif;letter-spacing:.04em}.brand b{font-family:"Fraunces",Georgia,serif;font-size:1.45rem;letter-spacing:.025em}.brand img,.contact-card>img,.menu-logo{border-radius:0!important;background:transparent!important;padding:0!important;object-fit:cover!important;clip-path:circle(38% at 50% 50%);transform:scale(1.18)}.hero-text,.section-copy>p:not(.eyebrow),.section-heading>p:last-child,.product-grid p,.press-copy p:not(.eyebrow){font-size:1.02rem;line-height:1.7}.menu-items span{font-size:.94rem}.menu-items strong{font-size:1rem;font-weight:600}.menu-card{box-shadow:6px 8px 0 #e8ded1;border-top-width:3px}.menu-card:nth-child(even){transform:translateY(1.25rem)}
 @media(max-width:800px){.menu-card:nth-child(even){transform:none}}
+
+/* Avis Google détaillés */
+.google-reviews{padding:6rem 8vw;background:#f4efe8}
+.google-reviews-inner{display:block;width:min(1180px,100%);margin:0 auto}
+.reviews-head{display:grid;grid-template-columns:minmax(0,1fr) 230px;align-items:end;gap:3rem;margin-bottom:2.5rem}
+.google-reviews-copy>p:last-child{max-width:590px;margin:1rem 0 0;color:var(--muted)}
+.google-rating-summary{min-width:0;padding:1.5rem 1.75rem;text-align:left}
+.google-rating-summary strong{font-size:3.3rem}
+.google-rating-summary .google-stars{margin:.45rem 0 .15rem}
+.google-rating-summary small{margin:0}
+.reviews-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.15rem;align-items:start}
+.review-card{position:relative;display:flex;flex-direction:column;min-height:100%;padding:1.65rem;background:#fff;border:1px solid #ded5cb;box-shadow:5px 7px 0 #dfd4c8}
+.review-author{display:flex;align-items:center;gap:.8rem}
+.review-author>span:last-child{min-width:0}
+.review-author strong{display:block;color:var(--ink);font-family:"Barlow",Arial,sans-serif;font-size:.92rem;font-weight:600;line-height:1.2}
+.review-author small{display:block;margin-top:.2rem;color:#746d66;font-size:.69rem;line-height:1.3}
+.review-avatar{display:grid;place-items:center;flex:0 0 40px;width:40px;height:40px;border-radius:50%;background:var(--wine);color:#fff;font-family:"Barlow Condensed",Arial,sans-serif;font-size:.85rem;font-weight:700;letter-spacing:.04em}
+.avatar-isabelle{background:#5f5148}.avatar-claire{background:#9a2ea4}.avatar-laurence{background:#384f7a}
+.review-score{display:flex;align-items:center;gap:.6rem;margin:1.15rem 0 .85rem}
+.review-score .google-stars{display:inline-block;margin:0;color:#f4b400;font-size:1.05rem;letter-spacing:.06em;line-height:1}
+.review-score>span:last-child{color:#6f6963;font-family:"Barlow Condensed",Arial,sans-serif;font-size:.72rem;font-weight:600;text-transform:none}
+.review-text{margin:0;color:#332f2b;font-size:.94rem;line-height:1.58}
+.review-visit{margin:1rem 0 0;color:#7d756d;font-size:.72rem}
+.owner-reply{margin:1.2rem 0 0;padding:1rem 1rem .9rem;border-left:3px solid var(--wine);background:#f5f1ec}
+.owner-reply strong{display:block;color:var(--ink);font-size:.76rem;text-transform:uppercase;letter-spacing:.035em}
+.owner-reply small{display:block;margin:.15rem 0 .55rem;color:#777069;font-size:.66rem}
+.owner-reply p{margin:0;color:#4a443f;font-size:.82rem;line-height:1.5}
+.review-source{display:block;margin-top:auto;padding-top:1.2rem;color:#8b837b;font-family:"Barlow Condensed",Arial,sans-serif;font-size:.65rem;letter-spacing:.08em;text-transform:uppercase}
+.reviews-action{margin-top:2.25rem;text-align:center}
+@media(max-width:960px){.reviews-grid{grid-template-columns:1fr 1fr}.review-card:last-child{grid-column:1/-1}}
+@media(max-width:700px){.google-reviews{padding:4.5rem 6vw}.reviews-head{grid-template-columns:1fr;gap:1.5rem}.google-rating-summary{width:100%}.reviews-grid{grid-template-columns:1fr}.review-card:last-child{grid-column:auto}.review-card{padding:1.4rem}.reviews-action .button{width:100%}}
+
